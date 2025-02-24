@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Editar Jugador</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row mt-3">
+			<div class="col-lg-6 offset-lg-3 text-center">
+				<h1>Editar Jugador</h1>
+			</div>
+		</div>
+
+		<div class="row mt-3">
+			<div class="col-lg-6 offset-lg-3">
+				<form th:action="@{/jugadores/{id}(id=${jugador.id})}" method="post">
+					<!-- Campo Nombre -->
+					<div class="form-group">
+						<label for="nombre">Nombre</label>
+						<input type="text" class="form-control" id="nombre" name="nombre" th:value="${jugador.nombre}"
+							required>
+					</div>
+
+					<!-- Campo Nivel -->
+					<div class="form-group">
+						<label for="nivel">Nivel</label>
+						<input type="number" class="form-control" id="nivel" name="nivel" th:value="${jugador.nivel}"
+							required>
+					</div>
+
+					<!-- Campo Items del Inventario -->
+					<div class="form-group">
+						<label for="items">Items del Inventario</label>
+						<input type="text" class="form-control" id="items" name="items"
+							th:value="${jugador.inventario.items}" required>
+					</div>
+
+					<button type="submit" class="btn btn-primary mt-3">Actualizar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lista de Jugadores</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/bootstrap-icons.css">
+</head>
+
+<body>
+
+	<div class="d-flex flex-column align-content-center min-vh-100">
+
+		<header>
+			<a th:href="@{/home}" class=""><img class="img-fluid w-25" src="/img/logo.svg" alt="Logo de Minecraft"></a>
+		</header>
+
+		<div class="container flex-grow-1 ">
+			<div class="row mt-3">
+				<div class="col-lg-6 offset-lg-3 text-center">
+					<h1 class="display-6 text-dark fw-bolder title">Crafteos</h1>
+				</div>
+			</div>
+
+
+			<div class="row mt-3 text-center">
+
+				<!-- Galería de cards -->
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <!-- GIFs primero -->
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/espadas.gif" class="card-img-top img-fluid" alt="Espadas" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Espadas</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/hachas.gif" class="card-img-top img-fluid" alt="Hachas" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Hachas</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/azadas.gif" class="card-img-top img-fluid" alt="Azadas" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Azadas</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/palas.gif" class="card-img-top img-fluid" alt="Palas" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Palas</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/antorcha.gif" class="card-img-top img-fluid" alt="Antorcha" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Antorcha</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/picos.gif" class="card-img-top img-fluid" alt="Picos" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Picos</h5>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Imágenes JPG y PNG -->
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/libreria.jpg" class="card-img-top img-fluid" alt="Librería" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Librería</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/escalera.jpg" class="card-img-top img-fluid" alt="Escalera" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Escalera</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/baldosas.jpg" class="card-img-top img-fluid" alt="Baldosas" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Baldosas</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/tnt.jpg" class="card-img-top img-fluid" alt="TRT" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">TNT</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/lana.jpg" class="card-img-top img-fluid" alt="Lana" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Lana</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/cuarzo.png" class="card-img-top img-fluid" alt="Cuarzo" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Cuarzo</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/glowstone.jpg" class="card-img-top img-fluid" alt="Glowstone" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Glowstone</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/lingote.jpg" class="card-img-top img-fluid" alt="Lingote" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Lingote</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/horno.jpg" class="card-img-top img-fluid" alt="Homo" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Horno</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/mesa.jpg" class="card-img-top img-fluid" alt="Mesa" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Mesa crafteo</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/palos.jpg" class="card-img-top img-fluid" alt="Palos" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Palos</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/estofado.jpg" class="card-img-top img-fluid" alt="Estofado" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Estofado</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/cofre.jpg" class="card-img-top img-fluid" alt="Cofre" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Cofre</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 d-flex">
+                            <div class="card text-center">
+                                <img src="/img/madera.jpg" class="card-img-top img-fluid" alt="Madera" style="height: 150px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1rem;">Madera</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+			</div>
+
+			<a th:href="@{/home}" class="btn btn-warning mt-3 mx-auto">Volver</a>
+
+			<a th:href="@{/cerrarSesion}" class="btn btn-danger mx-auto my-3">Cerrar Sesión</a>
+		</div>
+
+		<footer class="text-white mt-auto">
+			<p class="pt-1 pb-0">Yohanna Gelo &copy; Todos los derechos reservados</p>
+		</footer>
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

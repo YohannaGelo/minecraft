@@ -1,0 +1,121 @@
+/* Estilos generales */
+body {
+    background-image: url(/img/fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+    color: #ffffff;
+    font-family: 'Minecraft', sans-serif;
+}
+
+header {
+    background-color: #000000b8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h5 {
+	font-size: 15px;
+}
+
+header img {
+    max-width: 200px;
+    height: auto;
+}
+
+.title {
+	text-shadow: 1px 1px 5px #ffffff;
+}
+
+.container {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    background-color: #000000b8;
+    padding: 10px 0 0 0;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+}
+
+/* Estilos para tablas */
+.table-dark {
+    background-color: #2d2d2d;
+    border-color: #444;
+}
+
+.table-dark th,
+.table-dark td {
+    border-color: #444;
+}
+
+/* Estilos para formularios */
+.fondo-form {
+	background-color: #000000d8;
+}
+
+.form-group label {
+    color: #ffffff;
+}
+
+.form-control {
+    background-color: #ffffff;
+    border-color: #444;
+	color: #2d2d2d;
+}
+
+.form-control:focus {
+    background-color: rgb(254, 251, 197);
+    border-color: #3b8526;
+    color: #2d2d2d;
+}
+
+/* Estilos para botones */
+.btn-primary {
+    background-color: #3b8526;
+    border-color: #2f6a1f;
+}
+
+.btn-primary:hover {
+    background-color: #2f6a1f;
+    border-color: #3b8526;
+}
+
+.btn-success {
+    background-color: #4caf50;
+    border-color: #388e3c;
+}
+
+.btn-warning {
+    background-color: #ff9800;
+    border-color: #f57c00;
+}
+
+.btn-danger {
+    background-color: #f44336;
+    border-color: #d32f2f;
+}
+
+/* Estilos para tarjetas (cards) */
+.card {
+    background-color: #2d2d2d;
+    border-color: #444;
+    color: #ffffff;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}

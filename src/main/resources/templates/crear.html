@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Crear Jugador</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/estilos.css">
+</head>
+
+<body>
+	<div class="d-flex flex-column align-content-center min-vh-100">
+
+		<header>
+			<a th:href="@{/jugadores}" class=""><img class="img-fluid w-25" src="/img/logo.svg" alt="Logo de Minecraft"></a>
+		</header>
+
+		<div class="container flex-grow-1 ">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-3 text-center">
+					<h1 class="display-6 text-dark fw-bolder title">Crear Jugador</h1>
+				</div>
+			</div>
+
+			<div class="row mt-3">
+				<div class="col-lg-6 offset-lg-3">
+					<form th:action="@{/jugadores}" method="post" class="p-5 rounded fondo-form">
+						<!-- Campo Nombre -->
+						<div class="form-group">
+							<label for="nombre">Nombre</label>
+							<input type="text" class="form-control" id="nombre" name="nombre" required>
+						</div>
+
+						<!-- Campo Nivel -->
+						<div class="form-group">
+							<label for="nivel">Nivel</label>
+							<input type="number" class="form-control" id="nivel" name="nivel" required>
+						</div>
+
+						<!-- Campo Items del Inventario -->
+						<div class="form-group">
+							<label for="items">Items del Inventario</label>
+							<input type="text" class="form-control" id="items" name="items" required>
+						</div>
+
+						<button type="submit" class="btn btn-primary mt-3">Guardar</button>
+						<a th:href="@{/jugadores}" class="btn btn-warning mt-3 ms-3">Volver</a>
+					</form>
+				</div>
+			</div>
+			
+			<a th:href="@{/cerrarSesion}" class="btn btn-danger mx-auto my-3">Cerrar Sesión</a>
+		</div>
+
+		<footer class="text-white mt-auto">
+			<p class="pt-1 pb-0">Yohanna Gelo &copy; Todos los derechos reservados</p>
+		</footer>
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
